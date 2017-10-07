@@ -1,0 +1,179 @@
+/*
+  Top
+*/
+.vertical-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+
+.jumbotron {
+  height: 100%;
+  background: url("../images/background.jpg") no-repeat fixed;
+  background-size: 100% 100%;
+  position: relative; }
+
+.main, .sub {
+  color: #fff;
+  font-family: nameFont; }
+
+@font-face {
+  font-family: nameFont;
+  src: url(../font/VarianeScript.ttf); }
+/* end top */
+/* profile */
+.profilePic {
+  border-radius: 50%; }
+
+.about h2 {
+  margin-bottom: 20px;
+  position: relative;
+  opacity: 0;
+  font-family: nameFont;
+  transform: translateX(-20px);
+  transition: all 1.3s ease-in-out; }
+  .about h2.is-showing {
+    opacity: 1;
+    transform: translateX(0px); }
+
+.about p {
+  font-family: nameFont;
+  font-size: xx-large;
+  margin-bottom: 20px;
+  position: relative;
+  opacity: 0;
+  transform: translateX(-20px);
+  transition: all 1.3s ease-in-out; }
+  .about p.is-showing {
+    opacity: 1;
+    transform: translateX(0px); }
+
+/*end profile*/
+/* Projects */
+.content {
+  background-color: #11181f;
+  background-size: 100% 100%; }
+
+.projectPane {
+  background-color: #11181f;
+  background-size: 100% 100%; }
+
+.row.no-gutters {
+  margin-right: 0;
+  margin-left: 0; }
+
+.row.no-gutters > [class^="col-"],
+.row.no-gutters > [class*=" col-"] {
+  padding-right: 0;
+  padding-left: 0; }
+
+.projects {
+  overflow: hidden; }
+
+/* end projects*/
+/* contact */
+.contact {
+  /*background-color: #4488ee;*/
+  background: url("../images/background2.jpg") repeat fixed;
+  background-size: 100% 50%;
+  font-family: nameFont;
+  position: relative;
+  overflow: hidden; }
+
+/* end contact */
+/* footer */
+.footer {
+  background-color: #090b0c;
+  background-size: 100% 100%;
+  color: white; }
+
+.footerPic {
+  display: inline;
+  float: right;
+  padding-right: 1em; }
+
+#container {
+  display: flex;
+  /* establish flex container */
+  justify-content: center;
+  /* center items vertically, in this case */
+  align-items: center;
+  /* center items horizontally, in this case */
+  height: 1500px;
+  flex-wrap: wrap;
+  width: 50%;
+  margin: 0 auto;
+  overflow: hidden; }
+
+.box {
+  text-align: center;
+  height: 500px;
+  width: calc(100% * 0.5);
+  display: inline-block;
+  transform: scale(1);
+  transition: all 0.3s ease-in-out;
+  border: 1px solid transparent;
+  overflow: hidden; }
+
+/*.pic1:hover {*/
+  /*transform: scale(1.15); }*/
+
+/*.pic2:hover {*/
+  /*transform: scale(1.15); }*/
+
+/*.pic3:hover {*/
+  /*transform: scale(1.15); }*/
+
+/*.pic4:hover {*/
+  /*transform: scale(1.15); }*/
+
+/*.pic5:hover {*/
+  /*transform: scale(1.15); }*/
+
+/*.pic6:hover {*/
+  /*transform: scale(1.15); }*/
+.pic1 {
+  background-image: url("../images/vr1.bmp");
+  background-size: 100% 100%;
+  border: solid;
+}
+
+.pic2 {
+  background-image: url("../images/wd1.png");
+  background-size: 100% 100%;
+  border: solid;
+}
+
+.pic3 {
+  background-image: url("../images/vr2.bmp");
+  background-size: 100% 100%;
+  border: solid;
+}
+
+
+.pic4 {
+  background-image: url("../images/wd3.png");
+  background-size: 100% 100%;
+  border: solid;
+}
+
+.pic5 {
+  background-image: url("../images/vr3.bmp");
+  background-size: 100% 100%;
+  border: solid;
+}
+
+.pic6 {
+  background-image: url("../images/wd2.png");
+  background-size: 100% 100%;
+  border: solid;
+}
+
+
+@media screen and (max-width: 600px) {
+  #container {
+    flex-direction: column; }
+
+  .box {
+    min-width: 100%; } }
+
+/*# sourceMappingURL=styles.css.map */
